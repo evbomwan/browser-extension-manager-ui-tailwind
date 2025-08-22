@@ -9,16 +9,16 @@
   <body class="h-screen">
     <div class="flex justify-between items-center my-5 bg-slate-100 rounded-xl h-16 w-80 mx-auto md:w-full md:max-w-2xl lg:w-full lg:max-w-4xl">
       <div class="flex items-center h-full pl-5"><img src="./images/logo.svg" alt="" class="w-40"></div>
-      <div class="border bg-slate-200 flex w-10 h-11 px-2 rounded-lg mr-2"><img src="./images/icon-moon.svg" alt=""></div>
+      <div class="border bg-slate-200 flex w-10 h-11 px-2 rounded-lg mr-2 hover:bg-neutral-400"><img src="./images/icon-moon.svg" alt=""></div>
     </div>
-    <!-- <div class="w-80">
-      <div class="text-center"><h1>Extensions List</h1></div>
-      <div class="flex justify-around">
-        <button>All</button>
-        <button>Active</button>
-        <button>Inactive</button>
+    <div class="w-80 mx-auto md:w-full md:max-w-2xl lg:w-full lg:max-w-4xl md:flex justify-between">
+      <h1 class="font-bold text-4xl text-center mb-3">Extensions List</h1>
+      <div class="flex justify-between gap-4">
+        <button class="filter-btn border rounded-full px-5 py-2 font-bold shadow-md hover:text-white hover:bg-red-500 focus:outline-2 focus:outline-offset-2 focus:outline-red-400 active:bg-red-700">All</button>
+        <button class="filter-btn border rounded-full px-5 py-2 font-bold shadow-md hover:text-neutral-500 hover:bg-neutral-100 focus:outline-2 focus:outline-offset-2 focus:outline-red-400 active:bg-red-700">Active</button>
+        <button class="filter-btn border rounded-full px-5 py-2 font-bold shadow-md hover:text-white hover:bg-red-500 focus:outline-2 focus:outline-offset-2 focus:outline-red-400 active:bg-red-700">Inactive</button>
       </div>
-    </div> -->
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
