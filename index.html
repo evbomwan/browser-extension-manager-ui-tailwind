@@ -11,13 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="flex justify-between items-center my-5 bg-white rounded-xl h-16 w-80 mx-auto md:w-full md:max-w-2xl lg:w-full lg:max-w-4xl">
+    <div class="head flex justify-between items-center my-5 bg-white rounded-xl h-16 w-80 mx-auto md:w-full md:max-w-2xl lg:w-full lg:max-w-4xl">
       <div class="flex items-center h-full pl-5"><img src="./images/logo.svg" alt="" class="w-40"></div>
       <!-- light and dark mode switch button -->
-      <button id="switch" class="border bg-slate-200 flex w-10 h-11 px-2 rounded-lg mr-2 hover:bg-neutral-400"><img src="./images/icon-moon.svg" alt=""></button>
+      <button id="switch" class="border bg-slate-200 flex w-10 h-11 px-2 rounded-lg mr-2 hover:bg-neutral-400"><img src="./images/icon-moon.svg" alt="" id="mode"></button>
     </div>
     <div class="w-80 mx-auto md:w-full md:max-w-2xl lg:w-full lg:max-w-4xl md:flex justify-between">
-      <h1 class="font-bold text-4xl text-center mb-3">Extensions List</h1>
+      <h1 class="font-bold text-4xl text-center mb-3" id="extension">Extensions List</h1>
       <div class="flex justify-between gap-4">
         <button class="filter-btn bg-white border rounded-full px-5 py-2 font-bold shadow-md hover:text-white hover:bg-red-500 focus:outline-2 focus:outline-offset-2 focus:outline-red-400 active:bg-red-700">All</button>
         <button class="filter-btn bg-white border rounded-full px-5 py-2 font-bold shadow-md hover:text-neutral-500 hover:bg-neutral-100 focus:outline-2 focus:outline-offset-2 focus:outline-red-400 active:bg-red-700">Active</button>
@@ -27,7 +27,7 @@
 <!-- Extension div page -->
     <div class="w-80 rounded-xl bg-blue mx-auto my-10 md:w-full md:max-w-2xl lg:w-full lg:max-w-4xl lg:grid grid-cols-3 lg:justify-items-center lg:items-center">
       <!-- first extension -->
-      <div class="p-3 mx-auto w-72 bg-white rounded-2xl flex flex-col justify-between h-48 mt-2">
+      <div class="p-3 mx-auto w-72 bg-white rounded-2xl flex flex-col justify-between h-48 hover:">
         <!-- div houses img and text container -->
         <div class="flex justify-center items-start gap-2">
             <img src="./images/logo-devlens.svg" alt="">
